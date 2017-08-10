@@ -21,5 +21,6 @@ def test(request):
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', test),
+    # url(r'^', test),
+    url(r'^', include('apps.home_app.urls')),
 ]

@@ -12,4 +12,5 @@ def index(request):
         'students': ['Olivier','zarceh','jaims','landece','re']
     }
     request.awesome = "Class is awesome"
+    request.hamburgers = ['yum', 'x', 'foo', 'town']
     return render(request, "home_app/index.html", context)

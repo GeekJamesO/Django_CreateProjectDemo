@@ -1,3 +1,7 @@
 {{num}}
 {{students}}
 {{request.awesome}}
+
+{%for thing in request.hamburgers%}
+    <p>{{thing}}</p>
+{%endfor%}
